@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #fff;
+        }
+        h2 {
+            color: #ffc107;
+        }
+
+        p {
+            color: #bbb;
+        }
+
+        .intro-text button {
+            background-color: #ffc107;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 20px;
+            font-size: 16px;
+            width: 30%;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #e0a800;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffc107;
+            padding: 5px 20px;
+           
+        }
+
+        .navbar .logo {
+            font-weight: bold;
+            color: black;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar .nav-links li {
+            margin-left: 20px;
+        }
+
+        .navbar .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Intro Section Styling */
+        .intro-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: top;
+            padding: 20px 20px;
+        }
+
+        .intro-text {
+            max-width: 70%;
+        }
+
+        .intro-image img {
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        /* Contact Us Section Styling */
+        .contact-section {
+            padding: 10px 10px;
+        }
+
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-section label {
+            margin: 10px 0 5px;
+            color: #ffc107;
+        }
+
+        .contact-section input, .contact-section textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ffc107;
+            border-radius: 20px;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #000;
+        }
+
+        .contact-section input:focus, .contact-section textarea:focus {
+            outline: none;
+            border-color: #ffc107;
+        }
+
+        .contact-section .form-group {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .contact-section .form-group input {
+            width: 45%;
+        }
+
+        .contact-section .submit-btn {
+            background-color: #ffc107;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 20px;
+            font-size: 16px;
+            width: 20%;
+            margin: 0 auto; 
+            font-weight: bold;
+        }
+
+        /* Table Section Styling */
+        .table-section {
+            padding: 50px 20px;
+        }
+
+        .table-section table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #000;
+            color: #ffc107;
+        }
+
+        .table-section th, .table-section td {
+            border: none;
+            border-left: 1px solid #ffc107;
+            border-right: 1px solid #ffc107;
+            padding: 15px;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .table-section th {
+            border-top: 2px solid #ffc107;
+            border-bottom: 1px solid #ffc107;
+            background-color: #000;
+        }
+
+        .table-section tr:first-child td {
+            border-bottom: none;
+        }
+
+        .table-section tfoot td {
+            border: 2px solid #333;
+            background-color: #ffc107;
+            font-weight: bold;
+            text-align: left;
+            color: #333;
+        }
+        ::placeholder {
+            color: #ffc107; /* Yellow placeholder color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <div class="logo">Startup</div>
+                <ul class="nav-links">
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#login">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="intro" class="intro-section">
+            <div class="intro-text">
+                <h1>Startup Landing Page</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button>Login</button>
+            </div>
+            <div class="intro-image">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuBThTDTDQMdFG65Xb30eUu6GXDDitf4oInGbtOCukC8SzluEC" alt="Jeff Bezos">
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" id="name" name="name" placeholder="Name">
+                
+                <input type="email" id="email" name="email" placeholder="Email">
+                
+                <div class="form-group">
+                    <input type="text" id="mobile" name="mobile" placeholder="Mobile Number">
+                    <input type="text" id="city" name="city" placeholder="City">
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Form</button>
+            </form>
+        </section>
+
+        <section id="table" class="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>SNO.</th>
+                        <th>Startup Name</th>
+                        <th>Startup Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>WowIndia</td>
+                        <td>A startup with WOW Ideas.</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum Text</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum Text</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum Text</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum Text</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>00. </td>
+                        <td>Final Footer</td>
+                        <td>Lorem Ipsum Text</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
